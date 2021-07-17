@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.ornelasf1.soundboard.customActivity">
+
+    <!--<ImageView
+        android:id="@+id/recordingImg"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/recordbutton"
+        android:onClick="clickStart"/>-->
+
+    <TextView
+        android:id="@+id/recordingStatus"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/editFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recordingStatus"
+        android:hint="@string/enterFileName"
+        android:textAlignment="center"
+        android:singleLine="true"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/recordBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp">
+        <Button
+            android:id="@+id/bStart"
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:onClick="clickStart"/>
+
+        <Button
+            android:id="@+id/bPlay"
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bStart"
+            android:text="Play"
+            android:onClick="clickPlay"/>
+
+        <Button
+            android:id="@+id/bStop"
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bPlay"
+            android:text="Stop"
+            android:onClick="clickStop"/>
+
+        <Button
+            android:id="@+id/bStopRecording"
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bStop"
+            android:text="Save"
+            android:onClick="clickStopRecording"/>
+
+        <Button
+            android:id="@+id/bDiscard"
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bStopRecording"
+            android:text="DELETE"
+            android:onClick="clickDelete"/>
+    </LinearLayout>
+
+</RelativeLayout>

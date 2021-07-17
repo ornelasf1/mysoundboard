@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SoundBoard</string>
+    <string name="title">SoundBoard</string>
+    <string name="soundsButt">Sounds</string>
+    <string name="customButt">Customize</string>
+    <string name="playButt">Play</string>
+    <string name="delButt">Del</string>
+    <string name="renButt">Ren</string>
+    <string name="soundEntry1">Jacked</string>
+    <string name="soundEntry2">Bootleg Fireworks</string>
+    <string name="soundEntry3">Che Piernotas</string>
+    <string name="soundEntry4">Milk</string>
+
+    <string name="enterFileName">Enter name of sound</string>
+
+    <string name="lbl_recording">Record</string>
+</resources>
